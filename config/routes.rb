@@ -1,4 +1,6 @@
 Pinteresting::Application.routes.draw do
+  
+  devise_for :users
  root "pages#home"
  get "about"=>"pages#about"
  
@@ -56,4 +58,5 @@ Pinteresting::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+ # devise_for :users 
 end
